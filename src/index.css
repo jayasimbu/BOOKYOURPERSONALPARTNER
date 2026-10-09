@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #0b1020;
+    --surface: #151c2f;
+    --surface-hover: #1d2740;
+    --surface-border: #232d48;
+    --primary: #22d3ee;
+    --primary-hover: #06b6d4;
+    --secondary: #a3e635;
+    --secondary-hover: #84cc16;
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --success: #10b981;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom UI Utility Classes */
+.bg-dark-navy {
+  background-color: #0b1020;
+}
+
+.bg-surface {
+  background-color: #151c2f;
+}
+
+.bg-surface-hover {
+  background-color: #1d2740;
+}
+
+.border-surface {
+  border-color: #232d48;
+}
+
+.text-accent-cyan {
+  color: #22d3ee;
+}
+
+.text-accent-lime {
+  color: #a3e635;
+}
+
+.bg-accent-cyan {
+  background-color: #22d3ee;
+}
+
+.bg-accent-lime {
+  background-color: #a3e635;
+}
+
+/* Glassmorphism & Card Glow */
+.glass-card {
+  background: rgba(21, 28, 47, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-hover {
+  transition: all 0.25s ease-in-out;
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(34, 211, 238, 0.4);
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.15);
+  transform: translateY(-2px);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.25);
+}
+
+.glow-lime {
+  box-shadow: 0 0 25px rgba(163, 230, 53, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232d48;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee;
+}
